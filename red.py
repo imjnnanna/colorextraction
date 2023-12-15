@@ -14,20 +14,8 @@ plt.axis('off')
 
 cerror = 0.1
 red = np.zeros((len(M), len(M[0]), 3))
-orange = np.zeros((len(M), len(M[0]), 3))
-yellow = np.zeros((len(M), len(M[0]), 3))
-green = np.zeros((len(M), len(M[0]), 3))
-turquoise = np.zeros((len(M), len(M[0]), 3))
-blue = np.zeros((len(M), len(M[0]), 3))
-purple = np.zeros((len(M), len(M[0]), 3))
 
 red = M.copy()
-orange = M.copy()
-yellow = M.copy()
-green = M.copy()
-turquoise = M.copy()
-blue = M.copy()
-purple = M.copy()
 
 # red
 plt.subplot(1, 2, 2)
