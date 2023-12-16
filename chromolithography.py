@@ -2,11 +2,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
 
-cerror = 64 # adjust accordingly
+cerror = 32 # adjust accordingly
 
 img = Image.open("HSAR 019/images/americangothic.jpg")
 M = np.asarray(img)
 
+# default chromolithographic palette from the German school primary source
 c1_ref = [242, 204, 157]
 c2_ref = [249, 222, 43]
 c3_ref = [64, 38, 39]
@@ -28,6 +29,18 @@ white = [255, 255, 255]
 # c7_ref = [114,80,76]
 # c8_ref = [64,90,95]
 # c9_ref = [192,65,76]
+# white = [255, 255, 255]
+
+# kadinsky waterfall palette generated from imagecolorpicker.com
+# c1_ref = [47,64,72]
+# c2_ref = [141,108,83]
+# c3_ref = [179,160,148]
+# c4_ref = [92,122,116]
+# c5_ref = [103,81,65]
+# c6_ref = [148,150,157]
+# c7_ref = [159,164,159]
+# c8_ref = [165,89,120]
+# c9_ref = [29,17,17]
 # white = [255, 255, 255]
 
 c1 = M.copy()
